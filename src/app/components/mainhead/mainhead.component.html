@@ -1,0 +1,32 @@
+<div class="main-head">
+    <div class="buttons">
+            <span class="btn active" onclick="increaseFontSizeBy1em()">A</span>
+            <span class="btn" onclick="increaseFontSizeBy2em()">A</span>
+            <span class="btn" onclick="increaseFontSizeBy3em()">A</span>
+        
+    </div>   
+    <nav> 
+        <div class="logo">
+       <a class="navbar-brand" href="mainhead.component.html"><img src="assets/images/logo_1.PNG">
+        <h1 class="headername">Washington Connection</h1>
+            </a>
+        </div>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+              <li><a href="">HOME</a></li>
+              <li><a href="">ABOUT</a></li>
+              <li><a href="">SERVICES</a></li>
+              <li><a href="">CONTACT</a></li>
+            </ul>
+            
+        </div>
+        <div class="search-container">
+                <form action="/search" method="get">
+                    <input class="search expandright" id="searchright" type="search" name="q" placeholder="Search">
+                    <label class="button searchbutton" for="searchright"><span class="mglass">&#9906;</span></label>
+                </form>
+            </div>
+       <i class="fa fa-bars" onclick="showMenu()"></i>        
+    </nav>
+    </div>

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>WashingtonPoc2</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="assets/style.css">
+  <link href="https://fonts.googleleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">    
+    
+</head>
+<body>
+  <app-root></app-root>
+  <script>
+      var navLinks = document.getElementById("navLinks"); 
+        
+    function showMenu()
+     { 
+         navLinks.style.right = "0";
+         
+         
+     }
+    function hideMenu()
+    {
+        navLinks.style.right = "-200px";
+    }
+        
+    var card = document.getElementById("card")
+        
+        function openRegister(){
+            card.style.transform = "rotateY(-180deg)";
+            
+        }
+        function openLogin(){
+            card.style.transform = "rotateY(0deg)";
+            
+        }
+        
+    
+      var navLinks = document.getElementById("navLinks"); 
+        
+    function showMenu()
+     { 
+         navLinks.style.right = "0";
+         
+         
+     }
+    function hideMenu()
+    {
+        navLinks.style.right = "-200px";
+    } 
+        function increaseFontSizeBy1em(){
+            
+           const nodes = document.getElementsByTagName('p');
+            for (let i = 0; i < nodes.length; i++) {
+                nodes[i].style.fontSize='16px';
+            }
+            
+        }
+        function increaseFontSizeBy2em(){
+          const nodes = document.getElementsByTagName('p');
+            for (let i = 0; i < nodes.length; i++) {
+                nodes[i].style.fontSize='20px';
+            }
+        }
+        function increaseFontSizeBy3em(){
+            const nodes = document.getElementsByTagName('p');
+            for (let i = 0; i < nodes.length; i++) {
+                nodes[i].style.fontSize='24px';
+            }  
+        }
+    let buttons = document.querySelector('.buttons');
+    let btn = buttons.querySelectorAll('.btn');
+    
+    for(var i=0;i<btn.length;i++)
+    {
+        btn[i].addEventListener('click',function(){
+            
+            let current = document.getElementsByClassName('active');
+            current[0].className = current[0].className.replace("active","");
+            this.className += " active";
+            
+            
+        })    
+    }
+    
+    
+    </script>    
+</body>
+</html>
